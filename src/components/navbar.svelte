@@ -16,11 +16,6 @@
               class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
               aria-current="page">FakeStore</a
             >
-            <a
-              href="/blog"
-              class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
-              aria-current="page">Blog</a
-            >
           </div>
         </div>
       </div>

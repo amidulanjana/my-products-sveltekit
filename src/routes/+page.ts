@@ -1,8 +1,19 @@
-import type { PageLoad } from "./$types";
+import type { PageLoad } from ".svelte-kit/types/src/routes/$types";
+import { error } from '@sveltejs/kit';
 
-export const load: PageLoad = async ({ fetch, }) => {
+
+export const ssr = true;
+
+export const load: PageLoad = async ({ fetch }) => {
   const res = await fetch("https://fakestoreapi.com/products")
   const products = await res.json();
+
+  // if (products.length > 0) {
+  //   throw error(404, {
+  //     message: 'Not found'
+  //   });
+  // }
+
   return {
     products
   };

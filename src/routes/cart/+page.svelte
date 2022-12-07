@@ -46,7 +46,7 @@
                       class="flex justify-between text-base font-medium text-gray-900"
                     >
                       <h3>
-                        <a href="/">{product.title}</a>
+                        {product.title}
                       </h3>
                       <p class="ml-4">${product.price}</p>
                     </div>
@@ -54,7 +54,6 @@
                   </div>
                   <div class="flex flex-1 items-end justify-between text-sm">
                     <p class="text-gray-500">Qty 1</p>
-
                     <div class="flex">
                       <button
                         on:click={() => removeItem(product.id)}
@@ -83,21 +82,9 @@
       <div class="mt-6">
         <a
           href="/"
-          class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+          class="items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
           >Checkout</a
         >
-      </div>
-      <div class="mt-6 flex justify-center text-center text-sm text-gray-500">
-        <p>
-          or
-          <button
-            type="button"
-            class="font-medium text-indigo-600 hover:text-indigo-500"
-          >
-            Continue Shopping
-            <span aria-hidden="true"> &rarr;</span>
-          </button>
-        </p>
       </div>
     </div>
   </div>
